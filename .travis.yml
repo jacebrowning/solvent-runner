@@ -1,4 +1,4 @@
 language: python
 python: 3.8
-install: pip install --user pipx
-script: pipx run solvent strategy
+install: pip install solvent
+script: solvent strategy
