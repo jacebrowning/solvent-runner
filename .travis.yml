@@ -1,5 +1,4 @@
 language: python
-install:
-  - pip install pipx
-script:
-  - pipx run solvent strategy
+python: "3.8"
+install: pip install pipx
+script: pipx run solvent strategy
