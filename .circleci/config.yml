@@ -1,11 +1,8 @@
 version: 2
 jobs: 
   build: 
-    working_directory: ~/solvent-runner
     docker:
       - image: circleci/python:3.7.7
     steps:
-      - run:
-          command: |
-            sudo pip install pipx
-            pipx run solvent strategy
+      - run: sudo pip install pipx
+      - run: pipx run solvent strategy
